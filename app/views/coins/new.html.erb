@@ -1,0 +1,11 @@
+<% content_for :title, "New coin" %>
+
+<h1>New coin</h1>
+
+<%= render "form", coin: @coin %>
+
+<br>
+
+<div>
+  <%= link_to translated_navigation_links(:back_coins), coins_path %>
+</div>

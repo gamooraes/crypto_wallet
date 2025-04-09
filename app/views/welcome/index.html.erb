@@ -1,0 +1,24 @@
+<p>
+    <%= link_to 'Português', root_path(locale: 'pt-BR') %>
+</p>
+<p>
+     <%= link_to 'English', root_path(locale: 'en') %>
+</p>
+
+<h1>Seja Bem-Vindo!</h1>
+<p>
+    Teste para o I18n: <%= t("actual_locale")%> 
+</p>
+<p>
+    Primeira aplicação em Rails de Gabriel Moraes
+</p>
+
+<%= render "menu" %>
+
+<p>Você está no ambiente de <%= ambiente%> </p>
+
+<p>Esta é uma variável de instância <%= @teste %></p>
+
+<p> A data de hoje é: <%= l(Date.today) %></p>
+
+

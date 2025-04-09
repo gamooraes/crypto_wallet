@@ -1,0 +1,17 @@
+<div id="<%= dom_id coin %>">
+  <p>
+    <strong><%= translated_coin_attribute(:description)%>:</strong>
+    <%= coin.description %>
+  </p>
+
+  <p>
+    <strong><%= translated_coin_attribute(:acronym)%>:</strong>
+    <%= coin.acronym %>
+  </p>
+
+  <p>
+    <strong><%= translated_coin_attribute(:url_image)%>:</strong>    
+    <%= image_tag coin.url_image, size: "25x25" %>
+  </p>
+
+</div>
