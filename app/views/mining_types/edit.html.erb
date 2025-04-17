@@ -1,0 +1,12 @@
+<% content_for :title, "Editing mining type" %>
+
+<h1>Editing mining type</h1>
+
+<%= render "form", mining_type: @mining_type %>
+
+<br>
+
+<div>
+  <%= link_to translated_navigation_links(:show), @mining_type %> |
+  <%= link_to translated_navigation_links(:back_mining_type), mining_types_path %>
+</div>

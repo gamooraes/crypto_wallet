@@ -1,0 +1,32 @@
+en:
+  actual_locale: English(International)
+  links:
+    home: "Home"
+    edit: "Edit"
+    show: "Show"
+    delete: "Delete"
+    create_coin: Create Coin
+    create_mining_type: Create Mining Type
+  activerecord:
+    models:
+      coin: Coin
+      mining_type: Mining Tye
+    attributes:
+      coin:
+        id: ID
+        description: Description
+        acronym: Acronym
+        url_image: URL Image
+        mining_type: Mining Tye
+        mining_type_id: Mining Tye ID
+        created_at: Created at
+        updated_at: Updated at
+      mining_type:
+        id: ID
+        description: Description
+        acronym: Acronym        
+        created_at: Created at
+        updated_at: Updated at
+  texts:
+    h1: "Crypto Wallet"
+    p1: "This is an application where you can register your cryptocurrencies and your mining types."

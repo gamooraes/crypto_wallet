@@ -1,0 +1,36 @@
+'pt-BR':
+  actual_locale: Português Brasil
+  links:
+    home: "Inicio"
+    edit: Editar
+    show: Mostrar
+    delete: Apagar
+    new_coin: Nova Moeda  
+    new_mining_type: Novo Tipo de Mineração
+    back_coins: Voltar para Moedas  
+    back_mining_type: Voltar para Tipos de Mineração
+    create_coin: Cadastro de Moedas
+    create_mining_type: Cadastro de Tipos de Mineração  
+  activerecord:
+    models:
+      coin: Moeda
+      mining_type: Tipo de Mineração
+    attributes:
+      coin:
+        id: Código Identificador
+        description: Descrição
+        acronym: Acronimo
+        url_image: URL da Imagem
+        mining_types: Tipos de Mineração
+        mining_type_id: Código Identificador do Tipo de Mineração
+        created_at: Criado em
+        updated_at: Atualizado em
+      mining_type:
+        id: Código Identificador
+        description: Descrição
+        acronym: Acronimo        
+        created_at: Criado em
+        updated_at: Atualizado em
+  texts:
+    h1: "Crypto Wallet"
+    p1: "Está é uma aplicação onde você pode cadastrar suas criptomoedas e seus tipos de mineração."

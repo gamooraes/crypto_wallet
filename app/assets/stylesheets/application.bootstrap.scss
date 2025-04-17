@@ -1,0 +1,42 @@
+@import 'bootstrap/scss/bootstrap';
+@import 'bootstrap-icons/font/bootstrap-icons';
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a2e;
+}
+
+
+.dark-theme {
+    background-color: #1a1a2e;
+    color: #f8f9fa;
+}
+
+
+footer {
+    background-color: #16213e !important;
+    color: #1a1a2e !important;
+    padding: 2rem 0;
+}
+
+
+.text-gradient {
+    background: linear-gradient(45deg, #e94560, #0f3460);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+
+.rounded-start {
+    border-radius: 0 20px 20px 0 !important;
+}
+
+
+.btn {
+    transition: all 0.3s ease;
+}
