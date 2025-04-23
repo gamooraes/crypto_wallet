@@ -1,9 +1,9 @@
-<%= form_with(model: mining_type) do |form| %>
+<%= form_with(model: mining_type, html: { class: "dark-form" }) do |form| %>
   <% if mining_type.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(mining_type.errors.count, "error") %> prohibited this mining_type from being saved:</h2>
+    <div class="alert alert-danger mb-4">
+      <h2 class="h5 mb-2"><%= pluralize(mining_type.errors.count, "error") %> prohibited this mining_type from being saved:</h2>
 
-      <ul>
+      <ul class="mb-0 ps-3">
         <% mining_type.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
@@ -11,17 +11,18 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :description, style: "display: block" %>
-    <%= form.text_field :description %>
+  <div class="mb-3">
+    <%= form.label :description, class: "form-label text-light mb-2" %>
+    <%= form.text_field :description, class: "form-control bg-dark text-light border-secondary" %>
   </div>
 
-  <div>
-    <%= form.label :acronym, style: "display: block" %>
-    <%= form.text_field :acronym %>
+  <div class="mb-4">
+    <%= form.label :acronym, class: "form-label text-light mb-2" %>
+    <%= form.text_field :acronym, class: "form-control bg-dark text-light border-secondary" %>
   </div>
 
-  <div>
-    <%= form.submit %>
+  <div class="d-flex justify-content-between align-items-center">
+    <%= link_to "Cancel", mining_types_path, class: "btn btn-danger px-4" %>
+    <%= form.submit class: "btn btn-success px-4", data: { turbo: false } %>
   </div>
 <% end %>

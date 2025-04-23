@@ -1,4 +1,19 @@
-// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
+// Importações essenciais
 import "@hotwired/turbo-rails"
 import "controllers"
-import * as bootstrap from "bootstrap"
+
+// Importação do Bootstrap
+import { Tooltip, Popover } from "bootstrap"
+
+// Inicialização dos componentes
+document.addEventListener("turbo:load", () => {
+    // Inicializa tooltips
+    document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach(el => {
+        new Tooltip(el)
+    })
+
+    // Inicializa popovers
+    document.querySelectorAll('[data-bs-toggle="popover"]').forEach(el => {
+        new Popover(el)
+    })
+})

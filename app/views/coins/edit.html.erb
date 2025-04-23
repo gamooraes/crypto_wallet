@@ -1,12 +1,12 @@
 <% content_for :title, "Editing coin" %>
 
-<h1>Editing coin</h1>
+<h1 class="text-gradient mb-0" ><%= translate_text(:h1_editing_coin)%></h1>
 
 <%= render "form", coin: @coin %>
 
 <br>
 
 <div>
-  <%= link_to translated_navigation_links(:show), @coin %> |
-  <%= link_to translated_navigation_links(:back_coins), coins_path %>
+  <%= link_to translated_navigation_links(:show), @coin, class: "btn btn-outline-primary flex-grow-1" %> |
+  <%= link_to translated_navigation_links(:back_coins), coins_path, class: "btn btn-outline-primary flex-grow-1" %>
 </div>

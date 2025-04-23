@@ -40,3 +40,171 @@ footer {
 .btn {
     transition: all 0.3s ease;
 }
+
+.dark-form {
+    background-color: #1a1a2e;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.dark-form .form-control {
+    background-color: #16213e !important;
+    color: #fff !important;
+    border: 1px solid #4e4e6d;
+}
+
+.dark-form .form-control:focus {
+    border-color: #6c757d;
+    box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.25);
+    background-color: #1a1a2e !important;
+}
+
+.dark-form .form-label {
+    color: #e2e2e2;
+}
+
+.dark-form .alert-danger {
+    background-color: rgba(233, 69, 96, 0.15);
+    border: 1px solid rgba(233, 69, 96, 0.3);
+    color: #ff6b6b;
+    backdrop-filter: blur(5px);
+}
+
+
+.dark-form .form-select {
+    background-color: #16213e;
+    color: #fff;
+    border: 1px solid #4e4e6d;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23e2e2e2' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+}
+
+.dark-form .form-select:focus {
+    border-color: #6c757d;
+    box-shadow: 0 0 0 0.25rem rgba(108, 117, 125, 0.25);
+}
+
+/* Estilização para options */
+.dark-form .form-select option {
+    background-color: #1a1a2e;
+}
+
+/* Placeholder mais visível */
+.dark-form .form-control::placeholder {
+    color: #6c757d;
+    opacity: 0.7;
+}
+
+/* Botões do formulário */
+.dark-form .btn-outline-secondary {
+    color: #e2e2e2;
+    border-color: #4e4e6d;
+}
+
+.dark-form .btn-outline-secondary:hover {
+    background-color: #2d2d42;
+    color: #fff;
+}
+
+.dark-form .form-control,
+.dark-form .form-select {
+    transition: all 0.3s ease;
+}
+
+.card.bg-dark {
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    border-bottom: 1px solid #4e4e6d;
+    padding: 1.5rem;
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+.border-secondary {
+    border-color: #4e4e6d !important;
+}
+
+.btn-link.text-light {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.btn-link.text-light:hover {
+    color: #e94560 !important;
+}
+
+.attribute-group {
+    padding: 1rem;
+    background-color: rgba(22, 33, 62, 0.5);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    border-left: 3px solid #e94560;
+}
+
+.attribute-label {
+    color: #e94560;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+}
+
+.attribute-value {
+    color: #f8f9fa;
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #0f3460;
+    --bs-btn-border-color: #0f3460;
+    --bs-btn-hover-bg: #0f3460;
+    --bs-btn-hover-border-color: #0f3460;
+    --bs-btn-active-bg: #0d2b4d;
+    --bs-btn-active-border-color: #0c2645;
+}
+
+.coin-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 2px solid #e94560;
+    box-shadow: 0 0 15px rgba(233, 69, 96, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.coin-image:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .d-flex.gap-3 {
+        flex-direction: column;
+        gap: 1rem !important;
+    }
+
+    .coin-image {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 1rem;
+    }
+
+    .d-flex.gap-3 {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

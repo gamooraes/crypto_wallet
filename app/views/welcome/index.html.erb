@@ -1,22 +1,18 @@
 <div class="container-fluid dark-theme py-5" style="background-color: #1a1a2e; min-height: 80vh;">
   <div class="container">
-    <div class="row align-items-center g-0"> <!-- Adicionei g-0 para remover gutters -->
-      <!-- Texto à esquerda -->
-      <div class="col-lg-6 pe-lg-5"> <!-- Adicionei padding direito -->
+    <div class="row align-items-center g-0"> 
+     
+      <div class="col-lg-6 pe-lg-5"> 
         <h1 class="display-1 fw-bold mb-4 text-gradient">
           <%= translate_text(:h1) %>
         </h1>
         <p class="lead fs-3 mb-5 text-light">
           <%= translate_text(:p1) %>
-        </p>
-        <button class="btn btn-danger btn-lg px-4 py-2">
-          <%= translate_text(:call_to_action) %>
-        </button>
+        </p>       
       </div>
-
-      <!-- Imagem à direita (sem bordas ou marcações) -->
+      
       <div class="col-lg-6">
-        <div class="d-flex justify-content-end"> <!-- Alinhamento à direita -->
+        <div class="d-flex justify-content-end"> 
           <%= image_tag 'crypto_wallet.png', class: 'img-fluid rounded-start', 
               style: 'max-height: 500px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);', 
               alt: 'Crypto Wallet' %>

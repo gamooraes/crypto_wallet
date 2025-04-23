@@ -33,4 +33,9 @@
         updated_at: Atualizado em
   texts:
     h1: "Crypto Wallet"
+    h1_editing: "Editando Tipo de Mineração"
+    h1_new: "Novo Tipo de Mineração"
+    h1_editing_coin: "Editando Moeda"
+    h1_new_coin: "Nova Moeda"
     p1: "Está é uma aplicação onde você pode cadastrar suas criptomoedas e seus tipos de mineração."
+    confirm_message: "Tem certeza que deseja excluir?"

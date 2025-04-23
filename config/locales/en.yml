@@ -7,10 +7,11 @@ en:
     delete: "Delete"
     create_coin: Create Coin
     create_mining_type: Create Mining Type
+    back_mining_type: Back to Mining Types
   activerecord:
     models:
       coin: Coin
-      mining_type: Mining Tye
+      mining_type: Mining Type
     attributes:
       coin:
         id: ID
@@ -29,4 +30,10 @@ en:
         updated_at: Updated at
   texts:
     h1: "Crypto Wallet"
+    h1_editing: "Editing Mining Type"
+    h1_new: "New Mining Type"
+    h1_editing_coin: "Editing Coin"
+    h1_new_coin: "New Coin"
     p1: "This is an application where you can register your cryptocurrencies and your mining types."
+    confirm_message: "Are you sure you want to delete?"
+    

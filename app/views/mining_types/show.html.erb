@@ -1,10 +1,48 @@
-<p style="color: green"><%= notice %></p>
+<div class="container-fluid dark-theme py-5" style="min-height: 80vh;">
+  <div class="container">
+    <% if notice %>
+      <div class="alert alert-success alert-dismissible fade show mb-4" role="alert">
+        <%= notice %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <% end %>
 
-<%= render @mining_type %>
+    <div class="card bg-dark text-light border-secondary mb-4">
+      <div class="card-header">
+        <h2 class="text-gradient mb-0"><%= translated_model_name(MiningType) %></h2>
+      </div>
+      
+      <div class="card-body">
+        <div class="attribute-group mb-4">
+          <h3 class="attribute-label">
+            <%= translated_coin_attribute(:description) %>
+          </h3>
+          <p class="attribute-value"><%= @mining_type.description %></p>
+        </div>
+        
+        <div class="attribute-group">
+          <h3 class="attribute-label">
+            <%= translated_coin_attribute(:acronym) %>
+          </h3>
+          <p class="attribute-value"><%= @mining_type.acronym %></p>
+        </div>
 
-<div>
-  <%= link_to translated_navigation_links(:edit), edit_mining_type_path(@mining_type) %> |
-  <%= link_to translated_navigation_links(:back_mining_type), mining_types_path %>
-
-  <%= button_to translated_navigation_links(:delete), @mining_type, method: :delete %>
+        <div class="mt-4 pt-3 border-top border-secondary">
+        <div class="d-flex gap-3">
+          <%= link_to translated_navigation_links(:edit), edit_mining_type_path(@mining_type), 
+              class: "btn btn-outline-warning flex-grow-1" %>
+          
+          <%= link_to translated_navigation_links(:back_mining_type), mining_types_path, 
+              class: "btn btn-outline-primary flex-grow-1" %>
+          
+          <%= button_to translated_navigation_links(:delete), @mining_type, 
+              method: :delete, 
+              class: "btn btn-outline-danger flex-grow-1",
+              form: { data: { turbo_confirm: translate_text(:confirm_delete) } } %>
+        </div>           
+          
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
